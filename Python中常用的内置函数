@@ -1,0 +1,179 @@
+Python中常用的内置函数有很多，以下是一些常用的内置函数及其示例：
+一
+print()：输出函数，将括号中的内容打印到控制台上。
+print("Hello, world!")
+
+二
+len()：返回序列的长度（元素个数）。
+a = [1, 2, 3, 4, 5]
+print(len(a))  # 输出 5
+
+三
+type()：返回对象的类型。
+a = 5
+b = "Hello"
+print(type(a))  # 输出 <class 'int'>
+print(type(b))  # 输出 <class 'str'>
+
+四
+input()：输入函数，允许用户从键盘输入内容。
+name = input("What's your name? ")
+print("Hello, " + name + "!")
+
+五
+range()：生成一个整数序列，通常用在for循环中。
+for i in range(5):
+    print(i)
+
+六
+sum()：对序列进行求和。
+a = [1, 2, 3, 4, 5]
+print(sum(a))  # 输出 15
+
+七
+max()：返回序列中的最大值。
+a = [1, 2, 3, 4, 5]
+print(max(a))  # 输出 5
+
+八
+min()：返回序列中的最小值。
+a = [1, 2, 3, 4, 5]
+print(min(a))  # 输出 1
+
+九
+abs()：返回一个数的绝对值。
+a = -5
+print(abs(a))  # 输出 5
+
+十
+round()：返回一个数的四舍五入值。
+a = 3.14159
+print(round(a, 2))  # 输出 3.14
+
+十一
+str()：将对象转换为字符串类型。
+a = 5
+b = str(a)
+print(type(b))  # 输出 <class 'str'>
+
+十二
+int()：将对象转换为整数类型。
+a = "123"
+b = int(a)
+print(type(b))  # 输出 <class 'int'>
+
+十三
+float()：将对象转换为浮点数类型。
+a = "3.14"
+b = float(a)
+print(type(b))  # 输出 <class 'float'>
+
+十四
+list()：将对象转换为列表类型。
+a = (1, 2, 3, 4, 5)
+b = list(a)
+print(type(b))  # 输出 <class 'list'>
+
+十五
+tuple()：将对象转换为元组类型。
+a = [1, 2, 3, 4, 5]
+b = tuple(a)
+print(type(b))  # 输出 <class 'tuple'>
+
+十六
+dict()：将对象转换为字典类型。
+a = [("name", "Tom"), ("age", 18), ("gender", "male")]
+b = dict(a)
+print(type(b))  # 输出 <class 'dict'>
+
+十七
+zip()：将两个序列打包成一个元组序列，常用于for循环中。
+a = [1, 2, 3]
+b = ["red", "green", "blue"]
+c = zip(a, b)
+for i in c:
+    print(i)
+
+十八
+sorted()：返回一个排序后的序列。
+a = [5, 3, 2, 4, 1]
+b = sorted(a)
+print(b)  # 输出 [1, 2, 3, 4, 5]
+
+十九
+reversed()：返回一个反向的迭代器。
+a = [1, 2, 3, 4, 5]
+b = reversed(a)
+for i in b:
+    print(i)
+
+二十
+chr()：将Unicode码转换为字符。
+a = 65
+b = chr(a)
+print(b)  # 输出 A
+
+二十一
+ord()：将字符转换为Unicode码。
+a = "A"
+b = ord(a)
+print(b)  # 输出 65
+
+二十二
+bin()：将整数转换为二进制字符串
+a = 5
+b = bin(a)
+print(b)  # 输出 0b101
+
+二十三
+oct()：将整数转换为八进制字符串。
+a = 8
+b = oct(a)
+print(b)  # 输出 0o10
+
+二十四
+hex()：将整数转换为十六进制字符串。
+a = 15
+b = hex(a)
+print(b)  # 输出 0xf
+
+二十五
+abs()：返回一个数的绝对值。
+a = -5
+print(abs(a))  # 输出 5
+ 
+二十六
+all()：判断给定的可迭代参数中所有元素是否都为True。
+a = [1, True, "hello", [1, 2, 3]]
+print(all(a))  # 输出 True
+b = [0, False, "", []]
+print(all(b))  # 输出 False
+
+
+二十七
+any()：判断给定的可迭代参数中是否至少有一个元素为True。
+a = [0, False, "", [], None]
+print(any(a))  # 输出 False
+b = ["hello", True, [1, 2, 3]]
+print(any(b))  # 输出 True
+
+二十八
+enumerate()：返回一个枚举对象，可同时获得序列的索引和值。
+a = ["apple", "banana", "orange"]
+b = enumerate(a)
+for i in b:
+    print(i)
+
+二十九
+filter()：用于过滤序列，返回一个符合条件的新列表。
+a = [1, 2, 3, 4, 5]
+b = filter(lambda x: x > 3, a)
+print(list(b))  # 输出 [4, 5]
+
+三十
+map()：对序列中的每个元素进行操作，返回一个新的序列。
+a = [1, 2, 3, 4, 5]
+b = map(lambda x: x * 2, a)
+print(list(b))  # 输出 [2, 4, 6, 8, 10]
+
+网址：https://www.cnblogs.com/yund/p/17370975.html
